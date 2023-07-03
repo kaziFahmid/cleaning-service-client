@@ -15,7 +15,7 @@ export default function ServiceDetails() {
   const{data:servicesnames=[]}= useQuery({
     queryKey: ['servicename'],
     queryFn: async () => {
-      const res = await fetch(`http://localhost:5000/services/servicename`)
+      const res = await fetch(`https://cleaning-service-server-delta.vercel.app/services/servicename`)
       return res.json()
     },
   })

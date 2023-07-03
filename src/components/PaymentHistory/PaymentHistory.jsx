@@ -12,7 +12,7 @@ export default function PaymentHistory() {
     queryFn: async () => {
       if (!user?.email) return []; // Check if user email is defined
 
-      const res = await fetch(`http://localhost:5000/payments?email=${user.email}&sort=${asc ? 'asc' : 'desc'}`, {
+      const res = await fetch(`https://cleaning-service-server-delta.vercel.app/payments?email=${user.email}&sort=${asc ? 'asc' : 'desc'}`, {
         headers: {
           authorization: `bearer ${token}`,
         },

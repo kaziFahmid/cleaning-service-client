@@ -6,7 +6,7 @@ export default function AllStaff() {
     const{refetch,data:allstaff=[]}= useQuery({
         queryKey: ['allstaff'],
         queryFn: async () => {
-          const res = await fetch(`http://localhost:5000/allstaff`)
+          const res = await fetch(`https://cleaning-service-server-delta.vercel.app/allstaff`)
           return res.json()
         },
       })

@@ -13,7 +13,7 @@ export default function MyAppoinments() {
     queryKey: ['appoinments'],
     enabled: !loading,
     queryFn: async () => {
-      const res = await fetch(`http://localhost:5000/appoinments?email=${user?.email}`, {
+      const res = await fetch(`https://cleaning-service-server-delta.vercel.app/appoinments?email=${user?.email}`, {
         headers: {
           authorization: `bearer ${token}`,
         },

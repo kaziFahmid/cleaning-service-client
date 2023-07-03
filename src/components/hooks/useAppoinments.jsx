@@ -7,7 +7,7 @@ export default function useAppoinments() {
     const{refetch,data:usersappoinments=[]}= useQuery({
         queryKey: ['usersappoinments'],
         queryFn: async () => {
-          const res = await fetch(`http://localhost:5000/usersappoinments`,{
+          const res = await fetch(`https://cleaning-service-server-delta.vercel.app/usersappoinments`,{
             headers:{
               authorization:`bearer ${token}`
             }

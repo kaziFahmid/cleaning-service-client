@@ -33,7 +33,7 @@ import AdminRoute from './components/PrivateRoute/AdminRoute';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import UserRoute from './components/PrivateRoute/userRoute';
 
-axios.defaults.baseURL=`http://localhost:5000/`
+axios.defaults.baseURL=`https://cleaning-service-server-delta.vercel.app/`
 axios.interceptors.request.use((req)=>{return req})
 axios.interceptors.response.use((res)=>{return res.data})
 
@@ -61,7 +61,7 @@ const router = createBrowserRouter([
         {
           path: "/servicedetails/:id",
           element:<ServiceDetails/>,
-          loader:({params})=> fetch(`http://localhost:5000/services/${params.id}`)
+          loader:({params})=> fetch(`https://cleaning-service-server-delta.vercel.app/services/${params.id}`)
           
   
         },
@@ -122,7 +122,7 @@ const router = createBrowserRouter([
       
       path:'/dashboard/payment/:id',
       element:<UserRoute><Payment/></UserRoute>,
-      loader: ({params})=> fetch(`http://localhost:5000/appoinments/${params.id}`)
+      loader: ({params})=> fetch(`https://cleaning-service-server-delta.vercel.app/appoinments/${params.id}`)
    
     },
    ]

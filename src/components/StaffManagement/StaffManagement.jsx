@@ -9,14 +9,14 @@ export default function StaffManagement() {
   const{refetch,data:allstaff=[]}= useQuery({
     queryKey: ['allstaff'],
     queryFn: async () => {
-      const res = await fetch(`http://localhost:5000/allstaff`)
+      const res = await fetch(`https://cleaning-service-server-delta.vercel.app/allstaff`)
       return res.json()
     },
   })
 
   let handleFire=(_id)=>{
 
-    axios.patch(`http://localhost:5000/allstaff/${_id}`,{
+    axios.patch(`https://cleaning-service-server-delta.vercel.app/allstaff/${_id}`,{
       status:"fire"
     })
     .then(res=>{
@@ -32,7 +32,7 @@ export default function StaffManagement() {
   }
 
   let handleCancel=(_id)=>{
-    axios.patch(`http://localhost:5000/allstaff/${_id}`,{
+    axios.patch(`https://cleaning-service-server-delta.vercel.app/allstaff/${_id}`,{
       status:"cancel"
     })
     .then(res=>{

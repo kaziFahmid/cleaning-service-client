@@ -9,7 +9,7 @@ export default function useUser() {
     const{data:isUser=[],isLoading:isUserLoading}= useQuery({
         queryKey: ['user'],
         queryFn: async () => {
-          const res = await fetch(`http://localhost:5000/allusers/user/${user?.email}`,{
+          const res = await fetch(`https://cleaning-service-server-delta.vercel.app/allusers/user/${user?.email}`,{
             headers:{
               authorization:`bearer ${token}`
             }

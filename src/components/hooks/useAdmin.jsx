@@ -9,7 +9,7 @@ export default function useAdmin() {
     const{data:isAdmin=[],isLoading:isAdminLoading}= useQuery({
         queryKey: ['admin'],
         queryFn: async () => {
-          const res = await fetch(`http://localhost:5000/allusers/admin/${user?.email}`,{
+          const res = await fetch(`https://cleaning-service-server-delta.vercel.app/allusers/admin/${user?.email}`,{
             headers:{
               authorization:`bearer ${token}`
             }
