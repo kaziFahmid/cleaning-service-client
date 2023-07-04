@@ -1,8 +1,10 @@
 import { useQuery } from '@tanstack/react-query';
 import React, { useEffect, useState } from 'react';
 import useAuth from '../hooks/useAuth';
+import { useNavigate } from 'react-router-dom';
 
 export default function PaymentHistory() {
+  const navigate=useNavigate()
   const { user } = useAuth();
   console.log(user?.email);
   const token = localStorage.getItem('access-token');
@@ -17,6 +19,12 @@ export default function PaymentHistory() {
           authorization: `bearer ${token}`,
         },
       });
+
+      if (res.status === 401) {
+  
+        navigate('/login')
+        return Promise.reject('Unauthorized')
+      }
       return res.json();
     },
   });
