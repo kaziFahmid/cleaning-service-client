@@ -24,7 +24,7 @@ export default function Services() {
          <h1 className='text-4xl font-bold'>Why We Are Best</h1>
 </div>
 
-<div className='grid md:grid-cols-3 grid-cols-1 container mx-auto gap-10 mt-28'>
+<div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 container mx-auto gap-10 mt-28'>
   {
     services.map((service)=>{ return<div>
         

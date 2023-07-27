@@ -10,7 +10,7 @@ export default function TrustedCleaning() {
     delay: 100,
   });
   return (
-    <div className='md:grid flex   md:grid-cols-2 mt-32    container mx-auto gap-12 items-center flex-col-reverse '>
+    <div className='md:grid flex   lg:grid-cols-2 mt-32    container mx-auto gap-12 items-center flex-col-reverse '>
         <div data-aos="fade-right">
           <img src='https://img.freepik.com/free-vector/cleaning-staff-with-cleaning-equipment-profession-staff-woman-man-cleaning-window-illustration_1284-53009.jpg?w=740&t=st=1687538682~exp=1687539282~hmac=ca3574d8794b093b9a0b2ce30f2e6b3651b25c1ba3b1812d5be57cfe7631aeaf' className='w-full' />
         </div>

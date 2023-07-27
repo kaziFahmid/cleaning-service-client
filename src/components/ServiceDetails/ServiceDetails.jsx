@@ -116,10 +116,10 @@ status:"pending"
           <h1 className='text-center text-white font-bold  text-3xl md:text-6xl  '>Services/{data.name}</h1>
          </div>
       
-      <div className='grid md:grid-cols-12  grid-cols-1 container mx-auto'>
+      <div className='grid lg:grid-cols-12  grid-cols-1 container mx-auto'>
         <div className='md:col-span-4'>
 
-     <div className='mt-28 border-t-4 border-t-yellow-400 md:w-80 pt-5  '>
+     <div className='mt-28 border-t-4 border-t-yellow-400 lg:w-80 pt-5  '>
         <h2 className='font-bold text-black text-3xl text-center'>{data.name}</h2>
         <h2 className='text-center mt-2 text-lg font-bold'>Rate: ${data.rate}</h2>
      <ul className='md:w-full  mt-6 '>

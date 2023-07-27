@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Questions() {
   return (
-    <div className="join join-vertical md:w-5/12 w-full">
+    <div className="join join-vertical lg:w-5/12 w-full">
     <div className="collapse collapse-arrow join-item border border-base-300">
       <input type="radio" name="my-accordion-4" checked="checked" /> 
       <div className="collapse-title text-xl  font-medium">

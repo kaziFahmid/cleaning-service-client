@@ -28,7 +28,7 @@ export default function Header() {
 
 
   
-  <ul className='md:flex hidden items-center  mr-24 text-blue-950  font-bold justify-center gap-16'>
+  <ul className='lg:flex hidden items-center  mr-24 text-blue-950  font-bold justify-center gap-16'>
     <li className='hover:text-blue-500 duration-200 '><Link to='/'>Home</Link></li>
     <li className='hover:text-blue-500 duration-200'><Link to='/dashboard'>Dashboard</Link></li>
     <li className='hover:text-blue-500 duration-200'><Link to='/services'>Services</Link></li>
@@ -44,7 +44,7 @@ export default function Header() {
   </ul>
   
 
- <div className='md:hidden '>
+ <div className='lg:hidden '>
 
 
 
@@ -56,7 +56,7 @@ export default function Header() {
   </div> 
   <div className="drawer-side">
     <label htmlFor="my-drawer-4" className="drawer-overlay"></label>
-    <ul className="menu p-4 w-60 h-full bg-white text-base-content">
+    <ul className="menu p-4 w-80 h-full bg-white text-base-content">
 
     <div className="drawer-content">
     {/* Page content here */}

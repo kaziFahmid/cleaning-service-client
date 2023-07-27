@@ -14,9 +14,9 @@ export default function Home() {
       <FaqArea/>
       <TeamMember/>
 
-      <div className='grid mt-20 md:grid-cols-2 grid-cols-1 items-center container mx-auto gap-5'>
+      <div className='grid mt-20 lg:grid-cols-2 grid-cols-1 items-center container mx-auto gap-5'>
         <div >
-          <img  src="https://demo.casethemes.net/bixol/wp-content/uploads/2021/05/h6-about1.png" className='w-full'  />
+          <img  src="https://i.ibb.co/mGMxzMC/h6-about1.png" className='w-full'  />
         </div>
 
         <div  className=' mt-24 md:mt-0'>

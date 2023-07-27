@@ -30,9 +30,9 @@ const [isUser]=useUser()
    margin:'auto',  // Adjust the font size to make the 
 }}
   wrapperClass="blocks-wrapper"
-/>: <div className='grid   md:grid-cols-12'>
+/>: <div className='grid  grid-cols-1  lg:grid-cols-12'>
       
-      <div className='md:col-span-2 hidden  md:block'>
+      <div className='lg:col-span-2 hidden  lg:block'>
    <div className='h-screen bg-blue-950 pt-12  '>
 {isAdmin.admin?<h1 className='text-center text-2xl text-white '>Admin</h1>:<h1 className='text-center text-2xl text-white '>User</h1>}
 {/* admin */}
@@ -82,7 +82,7 @@ const [isUser]=useUser()
   <input id="my-drawer" type="checkbox" className="drawer-toggle" />
   <div className="drawer-content ms-auto">
     {/* Page content here */}
-    <label htmlFor="my-drawer" className="btn  md:hidden  drawer-button"><GiHamburgerMenu/></label>
+    <label htmlFor="my-drawer" className="btn  lg:hidden  drawer-button"><GiHamburgerMenu/></label>
   </div> 
   <div className="drawer-side">
     <label htmlFor="my-drawer" className="drawer-overlay"></label>

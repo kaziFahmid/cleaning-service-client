@@ -12,7 +12,7 @@ export default function AllStaff() {
       })
 
   return (
-    <div className='grid grid-cols-1  md:grid-cols-3 mx-auto container '>
+    <div className='grid grid-cols-1  lg:grid-cols-3 mx-auto container '>
         {allstaff.map((staff)=>{
            return <div className="  mx-auto mt-5 card md:w-96  bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
